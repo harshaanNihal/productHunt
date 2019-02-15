@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import ProductCard from './components/ProductCard';
+import ProductPage from './components/ProductPage';
+import ProductCardWrapper from './components/ProductCardWrapper';
+
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      isShowing :false,
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header />
+        <ProductCardWrapper/>
+        {(this.state.isShowing) ? <ProductPage/> : null}
+
+
       </div>
     );
   }
