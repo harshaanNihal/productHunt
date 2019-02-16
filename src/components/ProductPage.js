@@ -13,10 +13,10 @@ class ProductPage extends Component {
                 <img src="https://picsum.photos/100" />
               </div>
               <div className="product-details">
-                <h3>Title</h3>
-                <p>Description</p>
+                <h3>Page Hunter</h3>
+                <p><small>A place to find and follow awesome designers, connect friends, hunt freelancers for your projects</small></p>
                 <div>
-                  <button>Design Tools</button>
+                  <button>DESIGN TOOLS</button><button className="plus">+</button>
                 </div>
               </div>
               <button>#1 Product of the Day</button>

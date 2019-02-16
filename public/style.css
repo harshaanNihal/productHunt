@@ -231,15 +231,54 @@ h3, p, h1, h2, h4, h6, h5 {
 .product-page .wrapper {
   background: #fff;
   padding: 3.8em 2em;
+  border: 1px solid grey;
+  padding: 30px;
+  background: #fcf9fa;
+}
+
+.product-page .wrapper .product-page-card {
+  border: none;
+  padding: 25px 0;
+  color: grey;
+}
+
+.product-page .wrapper .product-page-card .plus {
+  padding: 8px 10px;
+  border: 1px solid lightgrey;
+  display: inline-block;
+}
+
+.product-page .wrapper .product-page-card button {
+  background: transparent;
+  border: none;
+  color: grey;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 8px 8px;
+}
+
+.product-page .wrapper .product-page-card button:hover .product-details, .product-page .wrapper .product-page-card button:hover .plus {
+  display: inline-block;
+}
+
+.product-page .wrapper .product-page-card h3 {
+  color: black;
+}
+
+.product-page .wrapper .product-page-card p {
+  padding: 5px;
 }
 
 .product__bottom {
-  width: 65%;
+  width: 80%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
-  padding: 10px;
+  -ms-grid-columns: auto 2fr;
+      grid-template-columns: auto 2fr;
+  padding: 1.8em;
+  border: 1px solid lightgrey;
+  background: #fff;
 }
 
 .product__bottom aside .aside-list {
@@ -277,11 +316,45 @@ h3, p, h1, h2, h4, h6, h5 {
   padding: 8px 0;
 }
 
+.product__bottom__right {
+  padding: 30px;
+}
+
+.product__bottom__right h3 {
+  padding: 6px 0;
+}
+
+.product__bottom__right p {
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.product__bottom__right img {
+  width: 130px;
+  height: 130px;
+}
+
 .product__bottom__right .product__image-sec {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product__bottom__right .product__image-sec .paragraph {
+  color: #868889;
+}
+
+.product__bottom__right .product__image-sec .image-sec__element {
+  cursor: pointer;
+}
+
+.product__bottom__right .product__image-sec .image-sec__element h4:hover {
+  color: #ed5a7e;
+}
+
+.product__bottom__right .product__image-sec .image-sec__element div small {
+  color: lightgrey;
 }
 
 .product__bottom__right .product__image-sec .image-sec__element span {
@@ -294,7 +367,6 @@ h3, p, h1, h2, h4, h6, h5 {
 }
 
 .border {
-  border: 1px solid #222;
   padding: 10px;
 }
 
