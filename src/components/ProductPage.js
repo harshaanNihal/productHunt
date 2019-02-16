@@ -16,35 +16,36 @@ class ProductPage extends Component {
                 <h3>Title</h3>
                 <p>Description</p>
                 <div>
-                  <button>5</button>
                   <button>Design Tools</button>
                 </div>
               </div>
-              <button>count</button>
+              <button>#1 Product of the Day</button>
             </div>
           </div>
           <div className="product__bottom">
             <div className="product__bottom__left border">
               <aside>
-                <img src="https://picsum.photos/100" />
-                <ul>
+                <img src="https://picsum.photos/300" />
+                <ul className="aside-list">
                   {/* give li icon */}
-                  <li>Product Designer</li>
-                  <li>Illustrator</li>
-                  <li>Animator</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Illustrator</li>
+                  <li><i class="fas fa-horse-head"></i>Animator</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
+                  <li><i class="fas fa-horse-head"></i>Product Designer</li>
                 </ul>
               </aside>
             </div>
             <div className="product__bottom__right border">
-              <h3>usgdrfl uisdhgfkjsa isohlgfd</h3>
-              <p>sfgdhdhjfios isdjfiosfjiofsf idjfdijsdiofsfj jdifjsiofjdsi</p>
+              <h3>Follow & Learn From The Best Designers</h3>
+              <p>A place to find and follow awesome designers, connect friends,
+               hunt freelancers for your projects. DesignerHunt was inspired by
+               <span>latinxswhodesign.com</span>, <span>blackswho.design</span> & <span>womenwho.design.</span></p>
               <section className="product__image-sec">
                 <ImageSec />
                 <ImageSec />

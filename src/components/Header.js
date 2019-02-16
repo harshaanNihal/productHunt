@@ -27,7 +27,7 @@ class Header extends Component {
 					<li>...</li>
 				</ul>
 				<div>
-					<button>LOG IN</button>
+					<button className="login-btn">LOG IN</button>
 					<button className="orange">SIGN UP</button>
 				</div>
 			</div>

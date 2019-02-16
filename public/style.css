@@ -1,4 +1,4 @@
-*, *:before, *after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -28,6 +28,18 @@ h3, p, h1, h2, h4, h6, h5 {
   padding: 10px;
   margin: 0 auto;
   place-items: center;
+  color: grey;
+}
+
+.headerWrapper .header .login-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid lightgrey;
+  cursor: pointer;
 }
 
 .headerWrapper .header button {
@@ -37,6 +49,12 @@ h3, p, h1, h2, h4, h6, h5 {
 .headerWrapper .header button.orange {
   background: #bf491f;
   color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .headerWrapper .header button.orange:hover {
@@ -51,6 +69,18 @@ h3, p, h1, h2, h4, h6, h5 {
 .headerWrapper .header .header-search {
   margin: 0 auto;
   width: 90%;
+  padding: 8px 10px;
+  background: transparent;
+  border: none;
+  border: 1px solid lightgrey;
+  color: grey;
+  outline: none;
+}
+
+.headerWrapper .header .header-search i {
+  font-size: 15px;
+  color: lightgrey;
+  padding: 0 10px;
 }
 
 .headerWrapper .header .nav-item {
@@ -61,7 +91,10 @@ h3, p, h1, h2, h4, h6, h5 {
   place-items: center;
   height: 80%;
   justify-self: left;
-  margin: 0 20px;
+}
+
+.headerWrapper .header .nav-item ul {
+  margin: 0;
 }
 
 .headerWrapper .header .nav-item li {
@@ -95,6 +128,83 @@ h3, p, h1, h2, h4, h6, h5 {
   border: none;
 }
 
+.message {
+  padding: 3px 7px;
+  border: none;
+  border: 1px solid lightgrey;
+  background: transparent;
+}
+
+.message i {
+  color: grey;
+  font-size: 12px;
+}
+
+.message span {
+  padding: 0 5px;
+}
+
+.design {
+  border: none;
+  background: transparent;
+  color: grey;
+  font-size: 12px;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+.design span {
+  padding: 4px;
+  border: 1px solid lightgrey;
+  margin-right: 10px;
+  display: none;
+}
+
+.design:hover {
+  text-decoration: underline;
+}
+
+.product-card:hover {
+  cursor: pointer;
+  background: #f4f5f7;
+}
+
+.product-card:hover .design span {
+  display: inline-block;
+  background: white;
+}
+
+.product-card:hover .message {
+  background: white;
+}
+
+.product-card p {
+  color: grey;
+  font-size: 12px;
+  padding: 6px 0px;
+}
+
+.product-card h3 {
+  font-weight: 400;
+}
+
+.product-card h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.product-card .right-btn {
+  padding: 24px 22px;
+  background: transparent;
+  border: none;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+.product-card .right-btn i {
+  font-size: 18px;
+}
+
 .close {
   position: absolute;
   top: 40px;
@@ -113,16 +223,52 @@ h3, p, h1, h2, h4, h6, h5 {
 }
 
 .product-page .wrapper {
-  background: #EEE;
+  background: #fff;
+  padding: 3.8em 2em;
 }
 
 .product__bottom {
-  width: 70%;
-  margin: 0 auto;
+  width: 65%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr;
-      grid-template-columns: 1fr 4fr;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding: 10px;
+}
+
+.product__bottom aside .aside-list {
+  padding: 20px 0;
+}
+
+.product__bottom aside img {
+  width: 90px;
+  height: 90px;
+}
+
+.product__bottom aside i {
+  color: yellow;
+  font-size: 13px;
+  padding-right: 7px;
+}
+
+.product__bottom aside li {
+  list-style: none;
+}
+
+.product__bottom__left {
+  width: 150px;
+  background: #0b0f16;
+  color: white;
+  font-size: 12px;
+}
+
+.product__bottom__left ul {
+  margin: 0;
+  padding: 0;
+}
+
+.product__bottom__left li {
+  padding: 8px 0;
 }
 
 .product__bottom__right .product__image-sec {
@@ -137,8 +283,13 @@ h3, p, h1, h2, h4, h6, h5 {
   border: 1px solid #222;
 }
 
+.product__bottom__right span {
+  color: pink;
+}
+
 .border {
   border: 1px solid #222;
+  padding: 10px;
 }
 
 .search-container {
