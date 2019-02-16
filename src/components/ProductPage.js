@@ -16,7 +16,7 @@ class ProductPage extends Component {
                 <h3>Title</h3>
                 <p>Description</p>
                 <div>
-                  <button>5</button>
+                  <button><i class="fas fa-comment"></i></button>
                   <button>Design Tools</button>
                 </div>
               </div>
@@ -29,16 +29,16 @@ class ProductPage extends Component {
                 <img src="https://picsum.photos/100" />
                 <ul>
                   {/* give li icon */}
-                  <li>Product Designer</li>
-                  <li>Illustrator</li>
-                  <li>Animator</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
-                  <li>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Illustrator</li>
+                  <li><i class="fas fa-user-edit"></i>Animator</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
+                  <li><i class="fas fa-user-edit"></i>Product Designer</li>
                 </ul>
               </aside>
             </div>

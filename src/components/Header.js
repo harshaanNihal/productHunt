@@ -6,7 +6,7 @@ class Header extends Component {
 			<section className="headerWrapper">
 			<div className="header">
 				<img src="https://picsum.photos/50"/>
-				<button className="header-search"><i/><span>Discover your next favourate Thing...</span></button>
+				<button className="header-search"><i class="fas fa-search"></i><span>Discover your next favourate Thing...</span></button>
 				<ul className="nav-item">
 					<li>Ask</li>
 					<li>Ship</li>
@@ -16,7 +16,7 @@ class Header extends Component {
 					<li>...</li>
 				</ul>
 				<div>
-					<button>LOG IN</button>
+					<button className="login-btn">LOG IN</button>
 					<button className="orange">SIGN UP</button>
 				</div>
 			</div>

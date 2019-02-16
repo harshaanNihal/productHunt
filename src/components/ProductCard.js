@@ -9,14 +9,14 @@ class ProductCard extends Component {
           <img src="https://picsum.photos/90" />
         </div>
         <div className="product-details">
-          <h3>Title</h3>
-          <p>Description</p>
+          <h3><a href="">Design Tools</a></h3>
+          <p>A place to follow & learn from the best designers.</p>
           <div>
-            <button>5</button>
-            <button>Design Tools</button>
+            <button className="message"><i class="fas fa-comment">5</i></button>
+            <button className="design"><span><i class="far fa-edit"></i></span>Design Tools</button>
           </div>
         </div>
-        <button>count</button>
+        <button className="right-btn"><i class="fas fa-caret-up"></i></button>
       </div>
     );
   }
