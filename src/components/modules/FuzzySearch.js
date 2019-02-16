@@ -26,10 +26,13 @@ class FuzzySearch extends Component {
     let searchFuzz = this.filteredFizz().splice(0,7);
     // console.log(searchFuzz)
     return (
-      <div className="search-container">
-        <input onChange={this.handleClick} value={this.state.inputField} className="fuzz fuzz-search" type="text" placeholder="disvover your next favourate thing" />
-        {(searchFuzz.length) ? searchFuzz.map(v => <div className="fuzz " ><span className="fuzzItem">{v}</span></div>) : <div className="fuzz " ><span className="fuzzItem">NO RESULT FOUND</span></div>}
+      <section className="fuzzyContainer" onClick={this.props.handleClick}>
+        <div className="header-replacement"></div>
+        <div className="search-container fuzz-child">
+          <input onChange={this.handleClick} value={this.state.inputField} className="fuzz-child fuzz fuzz-search" type="text" placeholder="disvover your next favourate thing" />
+          {(searchFuzz.length) ? searchFuzz.map(v => <div className="fuzz-child fuzz " ><span className="fuzz-child fuzzItem">{v}</span></div>) : <div className="fuzz " ><span className="fuzzItem">NO RESULT FOUND</span></div>}
       </div>
+      </section>
     );
   }
 }
