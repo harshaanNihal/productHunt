@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
+import FuzzySearch from './FuzzySearch';
+
 
 class Header extends Component {
+	constructor() {
+		super();
+		this.state = {
+			isSearching: false
+		}
+	}
+	handleClick=()=>{
+		this.setState({isSearching:true})
+	}
 	render() {
 		return (
 			<section className="headerWrapper">
 			<div className="header">
 				<img src="https://picsum.photos/50"/>
-				<button className="header-search"><i/><span>Discover your next favourate Thing...</span></button>
+				<button onClick={this.handleClick} className="header-search"><i/><span>Discover your next favourate Thing...</span></button>
 				<ul className="nav-item">
 					<li>Ask</li>
 					<li>Ship</li>
@@ -20,7 +31,9 @@ class Header extends Component {
 					<button className="orange">SIGN UP</button>
 				</div>
 			</div>
+			{this.state.isSearching && <FuzzySearch/>}
 			</section>
+
 
 		);
 	}

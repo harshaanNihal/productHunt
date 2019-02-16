@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import ProductCard from './components/ProductCard';
+import FuzzySearch from './components/FuzzySearch';
 import ProductPage from './components/ProductPage';
 import ProductCardWrapper from './components/ProductCardWrapper';
 
@@ -12,6 +12,7 @@ class App extends Component {
     super();
     this.state={
       isShowing :false,
+      isSearching :false
     }
   }
 

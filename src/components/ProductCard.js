@@ -13,7 +13,7 @@ class ProductCard extends Component {
           <p>Description</p>
           <div>
             <button>5</button>
-            <button>Design Tools</button>
+            <button className="product-btn">Design Tools</button>
           </div>
         </div>
         <button>count</button>
