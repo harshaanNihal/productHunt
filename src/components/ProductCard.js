@@ -12,7 +12,7 @@ class ProductCard extends Component {
           <h3><a href="">Design Tools</a></h3>
           <p>A place to follow & learn from the best designers.</p>
           <div>
-            <button className="message"><i class="fas fa-comment">5</i></button>
+            <button className="message"><i class="fas fa-comment"><span>5</span></i></button>
             <button className="design"><span><i class="far fa-edit"></i></span>Design Tools</button>
           </div>
         </div>
