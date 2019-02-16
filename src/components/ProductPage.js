@@ -5,7 +5,7 @@ class ProductPage extends Component {
   render() {
     return (
       <div className="product-page">
-          <button className="close">X</button>
+          <button onClick={this.props.handleIsShowing}className="close">X</button>
         <div className="wrapper">
           <div className="page">
             <div className="product-page-card">

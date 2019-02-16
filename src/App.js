@@ -9,18 +9,23 @@ import ProductCardWrapper from './components/ProductCardWrapper';
 class App extends Component {
   constructor(){
     super();
-    this.state={
+    this.state = {
       isShowing :false,
-      isSearching :false
     }
+  }
+
+  handleIsShowing=()=>{
+    console.log("hello");
+    this.setState({ isShowing: !this.state.isShowing })
+
   }
 
   render() {
     return (
       <div className="App">
         <Header />
-        <ProductCardWrapper/>
-        {(this.state.isShowing) ? <ProductPage/> : null}
+        <ProductCardWrapper handleIsShowing={this.handleIsShowing}/>
+        {this.state.isShowing && <ProductPage handleIsShowing={this.handleIsShowing}/> }
 
 
       </div>

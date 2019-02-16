@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ProductCard extends Component {
   render() {
     return (
-      <div className="product-card">
+      <div className="product-card" onClick={this.props.handleIsShowing}>
         {/* <h1>Today</h1> */}
         <div>
           <img src="https://picsum.photos/90" />
