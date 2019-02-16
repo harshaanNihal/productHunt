@@ -18,7 +18,7 @@ class Header extends Component {
 			<section className="headerWrapper">
 			<div className="header">
 				<img src="https://picsum.photos/35"/>
-				<button onClick={this.handleClick} className="header-search"><i/><span>Discover your next favourate Thing...</span></button>
+				<button onClick={this.handleClick} className="header-search"><i class="fas fa-search"></i><span>Discover your next favourate Thing...</span></button>
 				<ul className="nav-item">
 					<li>Ask</li>
 					<li>Ship</li>
