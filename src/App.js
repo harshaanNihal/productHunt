@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import FuzzySearch from './components/FuzzySearch';
 import ProductPage from './components/ProductPage';
 import ProductCardWrapper from './components/ProductCardWrapper';
 

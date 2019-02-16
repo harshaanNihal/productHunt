@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FuzzySearch from './FuzzySearch';
+import FuzzySearch from './modules/FuzzySearch';
 
 
 class Header extends Component {
@@ -9,14 +9,15 @@ class Header extends Component {
 			isSearching: false
 		}
 	}
-	handleClick=()=>{
-		this.setState({isSearching:true})
+	handleClick=(e)=>{
+		if(e.target.classList.contains('fuzz-child')) return;
+		this.setState({isSearching:!this.state.isSearching})
 	}
 	render() {
 		return (
 			<section className="headerWrapper">
 			<div className="header">
-				<img src="https://picsum.photos/50"/>
+				<img src="https://picsum.photos/35"/>
 				<button onClick={this.handleClick} className="header-search"><i/><span>Discover your next favourate Thing...</span></button>
 				<ul className="nav-item">
 					<li>Ask</li>
@@ -31,7 +32,7 @@ class Header extends Component {
 					<button className="orange">SIGN UP</button>
 				</div>
 			</div>
-			{this.state.isSearching && <FuzzySearch/>}
+			{this.state.isSearching && <FuzzySearch handleClick={this.handleClick}/>}
 			</section>
 
 
