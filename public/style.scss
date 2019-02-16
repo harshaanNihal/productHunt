@@ -92,6 +92,10 @@ h3, p, h1, h2, h4, h6, h5 {
 
             li {
                 margin: 0 10px;
+                 &:hover{
+                  color: #b2aeae;
+                  cursor: pointer;
+                 }
             }
         }
     }
@@ -421,9 +425,6 @@ h3, p, h1, h2, h4, h6, h5 {
         height: 47px;
         padding: 0 10px;
         border: none;
-
-        // letter-spacing: 2.2px;
-        // font-weight: 600;
         color: #333;
         font-size: 18px;
     }
